@@ -4,9 +4,14 @@ import { WelcomeRoutingModule } from './welcome-routing.module';
 
 import { WelcomeComponent } from './welcome.component';
 
+import { MarkdownModule } from 'ngx-markdown'
+
 
 @NgModule({
-  imports: [WelcomeRoutingModule],
+  imports: [
+    WelcomeRoutingModule,
+    MarkdownModule.forChild()
+  ],
   declarations: [WelcomeComponent],
   exports: [WelcomeComponent]
 })
