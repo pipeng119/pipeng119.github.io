@@ -16,9 +16,9 @@
 
 > 基础常识以及必须掌握点
 
-| 基本常识  <img width=200/>                                                                                 | 必须掌握 <img width=200/>                                                                 | 扩展知识<img width=200/>              |
-| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------- |
-| NPM<br/>[关于npm哪些事儿](https://github.com/FrankKai/FrankKai.github.io/issues/41)                        | Angular<br/> [英雄之旅](https://angular.cn/tutorial)                                      | Node.js<br/>[官网](http://nodejs.cn/) |
-| Git<br/>[入门指南](http://rogerdudler.github.io/git-guide/index.zh.html)<br/>[Git Commit 规范（待补充）]() | TypeScript<br/>[官网](https://www.typescriptlang.org/docs/)                               | GraphQL                               |
-| http-server                                                                                                | RxJS<br/>[rxjs官方文档翻译](https://buctwbzs.gitbooks.io/rxjs/content/rookie-primer.html) |                                       |
-| Nginx                                                                                                      | SCSS<br/>[sass中文网](https://www.sass.hk/docs/) |                                       |
+| 基本常识  <img width=200/>                                                                                 | 必须掌握 <img width=200/>                                                                                                        | 扩展知识<img width=200/>              |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| NPM<br/>[关于npm哪些事儿](https://github.com/FrankKai/FrankKai.github.io/issues/41)                        | Angular<br/> [英雄之旅](https://angular.cn/tutorial)                                                                             | Node.js<br/>[官网](http://nodejs.cn/) |
+| Git<br/>[入门指南](http://rogerdudler.github.io/git-guide/index.zh.html)<br/>[Git Commit 规范（待补充）]() | TypeScript<br/>[官网](https://www.typescriptlang.org/docs/)                                                                      | GraphQL                               |
+| http-server                                                                                                | RxJS<br/>[rxjs官方文档翻译](https://buctwbzs.gitbooks.io/rxjs/content/rookie-primer.html)<br/>[大理石图](https://rxmarbles.com/) |                                       |
+| Nginx                                                                                                      | SCSS<br/>[sass中文网](https://www.sass.hk/docs/)                                                                                 |                                       |
