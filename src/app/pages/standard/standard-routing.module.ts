@@ -1,3 +1,4 @@
+import { CodeComponent } from './code/code.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StyleguideComponent } from './styleguide/styleguide.component';
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'styleGuide',
     component: StyleguideComponent
+  },
+  {
+    path: 'code',
+    component: CodeComponent
   },
 ];
 
