@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StyleguideComponent } from './styleguide/styleguide.component';
 import { ToolsetComponent } from './toolset/toolset.component';
+import { PerformanceComponent } from './performance/performance.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'code',
     component: CodeComponent
+  },
+  {
+    path: 'perfomance',
+    component: PerformanceComponent
   },
 ];
 
