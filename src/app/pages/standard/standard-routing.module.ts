@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { StyleguideComponent } from './styleguide/styleguide.component';
 import { ToolsetComponent } from './toolset/toolset.component';
 import { PerformanceComponent } from './performance/performance.component';
+import { FlowComponent } from './flow/flow.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'perfomance',
     component: PerformanceComponent
+  },
+  {
+    path: 'flow',
+    component: FlowComponent
   },
 ];
 

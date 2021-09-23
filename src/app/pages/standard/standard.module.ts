@@ -7,6 +7,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { StyleguideComponent } from './styleguide/styleguide.component';
 import { CodeComponent } from './code/code.component';
 import { PerformanceComponent } from './performance/performance.component';
+import { FlowComponent } from './flow/flow.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { PerformanceComponent } from './performance/performance.component';
     ToolsetComponent,
      StyleguideComponent,
      CodeComponent,
-     PerformanceComponent
+     PerformanceComponent,
+     FlowComponent
   ],
   imports: [
     CommonModule,
