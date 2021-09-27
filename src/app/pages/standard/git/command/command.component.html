@@ -1,0 +1,325 @@
+<table>
+  <tr>
+    <th>序号</th>
+    <th>分类</th>
+    <th>命令</th>
+    <th>描述</th>
+    <th>备注</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td rowspan="11">git branch（分支操作）</td>
+    <td>git branch &lt;new branch&gt; </td>
+    <td>新建分支 不切换</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>git branch </td>
+    <td>查看本地所有分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>git branch -r</td>
+    <td>查看远程所有分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>git branch -a</td>
+    <td>查看本地和远程的所有分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>git branch -m &lt;new branch&gt;</td>
+    <td>修改当前分支名</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>git branch -m &lt;local branch &gt; &lt;new branch&gt;</td>
+    <td>修改不是当前分支的分支名</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>git branch -d &lt;local branch&gt;</td>
+    <td>删除本地分支(即将要删除的分支，已经合并到当前分支)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>git branch -D &lt;local branch&gt;</td>
+    <td>删除本地分支(即将要删除的分支，没有合并到当前分支)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>git push origin branch --delete &lt;remote branch&gt;</td>
+    <td>删除远程分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>git branch -v</td>
+    <td>查看本地各分支最后的提交信息</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>git branch --merged</td>
+    <td>查看哪些分支已经合并入当前分支</td>
+    <td></td>
+  </tr>
+  <tr class="pretend-th">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td rowspan="5">git checkout （用于切换分支活恢复工作书文件）</td>
+    <td>git checkout &lt;local branch&gt;</td>
+    <td>切换本地分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>git checkout -b &lt;new branch&gt;</td>
+    <td>新建分支并切换到该分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>git checkout -b &lt;new branch&gt; origin/&lt;remote branch&gt;</td>
+    <td>把远程分支拉取到本地，作为新的分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>git checout .</td>
+    <td>把当前目录所有修改的文件恢复成未修改时的状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>git checkout --&lt;file name&gt;</td>
+    <td>恢复当前目录下的某个文件</td>
+    <td></td>
+  </tr>
+  <tr class="pretend-th">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td rowspan="2">git fetch</td>
+    <td>git fetch</td>
+    <td>查看远程版本库中的更新，取到本地</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>git fetch -p</td>
+    <td>查看远程已删除的分支</td>
+    <td></td>
+  </tr>
+
+  <tr class="pretend-th">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td rowspan="5">git tag(标签操作)</td>
+    <td>git tag</td>
+    <td>查看远程所有tag</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>git tag ### </td>
+    <td>创建本地tag</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>git push --tag</td>
+    <td>创建本地tag</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>git tag -d ###</td>
+    <td>删除本地tag</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>git push origin tag --delete ###</td>
+    <td>删除远程tag</td>
+    <td></td>
+  </tr>
+
+  <tr class="pretend-th">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td rowspan="6">文件变更、保存操作</td>
+    <td>git add .</td>
+    <td>跟踪本地发生变化的文件</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>git status | git status -a</td>
+    <td>查看文件处于什么状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>git diff -cached</td>
+    <td>比较缓存区与最新本地版本库</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>git diff</td>
+    <td>比较工作区与缓存区的差异</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>git pull</td>
+    <td>从远程拉取最新代码</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>git push</td>
+    <td>把该分支提交到远程</td>
+    <td></td>
+  </tr>
+
+  <tr class="pretend-th">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td rowspan="3">git merge（合并分支）</td>
+    <td>git merge &lt;local branch&gt;</td>
+    <td>把本地某分支合并到该分支</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>git merge --abort</td>
+    <td>取消合并</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>git cherry-pick &lt;commit_id&gt;</td>
+    <td>将某分支的commit_id提交合并到当前分支</td>
+    <td></td>
+  </tr>
+
+  <tr class="pretend-th">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td rowspan="5">git remote (远程仓库操作)</td>
+    <td>git remote</td>
+    <td>查看关联的远程仓库的名称</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>git remote -v</td>
+    <td>查看关联的远程仓库的地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>git remote add repositiry_name repository_url</td>
+    <td>新增远程仓库</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>git remote remove repositiry_name</td>
+    <td>删除远程仓库</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>git remote set-url &lt;new-repositiry-name&gt; &lt;new-repository-url&gt;</td>
+    <td>直接修改远程仓库名称和地址</td>
+    <td></td>
+  </tr>
+
+  <tr class="pretend-th">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td rowspan="5">git reset (撤销commit操作)</td>
+    <td>git reset --soft HEAD^</td>
+    <td>只撤销commit记录，所有改动都保留（工作区和暂存区）</td>
+    <td rowspan="5">
+      HEAD 最近一个提交
+      <hr />
+      HEAD^1上一次提交
+      <hr />
+      git add . 后改动的文件在暂存区(stage diretory),未add之前改动的文件在工作区(wording diretory)
+    </td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>git reset --mixed HEAD^</td>
+    <td>撤销commit记录，所有改动都保留在工作区</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>git reset --hard HEAD^</td>
+    <td>不仅是撤销commit记录，所有改动都被撤销(工作区和暂存区)</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>git rev-parse HEAD</td>
+    <td>获取本地commit后的commit id</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>git diff HEAD HEAD^ --name-only</td>
+    <td>获取本次修改/增删的文件列表</td>
+  </tr>
+</table>

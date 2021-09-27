@@ -30,6 +30,44 @@
               <li nz-menu-item>
                 <a routerLink="/standard/perfomance">性能规范</a>
               </li>
+              <li nz-menu-item>
+                <a routerLink="/standard/flow">流程规范</a>
+              </li>
+              <li nz-submenu nzTitle="git规范">
+                <ul>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/git">规范概览</a>
+                  </li>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/git/commit">commit规范</a>
+                  </li>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/git/merge">merge规范</a>
+                  </li>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/git/tag">tag规范</a>
+                  </li>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/git/branch">branch规范</a>
+                  </li>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/git/release">release规范</a>
+                  </li>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/git/command">command规范</a>
+                  </li>
+                </ul>
+              </li>
+              <li nz-submenu nzOpen nzTitle="工程规范">
+                <ul>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/engineer">项目架构规范</a>
+                  </li>
+                  <li nz-menu-item>
+                    <a routerLink="/standard/engineer/rxjs">Rxjs规范</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li nz-menu-item nzMatchRouter>
@@ -40,10 +78,13 @@
           </li>
         </ul>
       </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+      <li nz-submenu nzOpen nzTitle="Demo" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a>Basic Form</a>
+            <a routerLink="/demo">demo1</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/demo/second">demo2</a>
           </li>
         </ul>
       </li>

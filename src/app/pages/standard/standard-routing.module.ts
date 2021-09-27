@@ -31,6 +31,8 @@ const routes: Routes = [
     path: 'flow',
     component: FlowComponent
   },
+  { path: 'git', loadChildren: () => import('./git/git.module').then(m => m.GitModule) },
+  { path: 'engineer', loadChildren: () => import('./engineering/engineering.module').then(m => m.EngineeringModule) },
 ];
 
 @NgModule({
