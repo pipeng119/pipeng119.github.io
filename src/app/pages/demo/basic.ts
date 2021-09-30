@@ -9,7 +9,6 @@ export class CancelSubject {
     query.forEach(sub => {
       sub.next();
       sub.complete();
-      console.log('销毁流')
     })
   }
 }

@@ -1,0 +1,17 @@
+:host ::ng-deep table {
+  width: 100%;
+
+  td,
+  th {
+    padding: 10px;
+    border: 1px solid #000;
+  }
+
+  .special-th{
+    width: 300px;
+
+    img{
+      width: 100%;
+    }
+  }
+}

@@ -21,10 +21,15 @@ export class FirstComponent extends CancelSubject implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.data$ = this.dataService.getData()
+    // this.data$ = this.dataService.getData()
+    this.dataService.serviceData$.subscribe(res => {
+      console.log('first',res)
+    })
     this.test1$.subscribe(res => console.log(res))
     this.test2$.subscribe(res => console.log(res))
     this.testReplaySubject();
+
+    this.dataService.shareTest().subscribe(console.log)
   }
 
   testReplaySubject(): void {
@@ -44,7 +49,7 @@ export class FirstComponent extends CancelSubject implements OnInit, OnDestroy {
     num$.next(7)
 
     num$.subscribe(num => {
-      console.log(num) // 2,7
+      // console.log(num) // 2,7
     })
   }
 
