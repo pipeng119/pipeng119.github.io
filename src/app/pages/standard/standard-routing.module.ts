@@ -33,6 +33,7 @@ const routes: Routes = [
   },
   { path: 'git', loadChildren: () => import('./git/git.module').then(m => m.GitModule) },
   { path: 'engineer', loadChildren: () => import('./engineering/engineering.module').then(m => m.EngineeringModule) },
+  { path: 'file', loadChildren: () => import('./file/file.module').then(m => m.FileModule) },
 ];
 
 @NgModule({

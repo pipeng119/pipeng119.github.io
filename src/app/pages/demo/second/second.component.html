@@ -1,2 +1,9 @@
 <p>second works!</p>
 <button (click)="biu()">biu</button>
+<ul>
+  <li *ngFor="let item of data?.data?.info">
+
+    <span [class.red]="(item.age | transform) > 50">{{item.age | transform}}</span>
+    <input type="text" placeholder="抽刀断水水更流" [disabled]="(item.age | transform) > 50">
+  </li>
+</ul>

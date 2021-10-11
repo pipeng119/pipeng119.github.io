@@ -13,10 +13,10 @@ import { FlowComponent } from './flow/flow.component';
 @NgModule({
   declarations: [
     ToolsetComponent,
-     StyleguideComponent,
-     CodeComponent,
-     PerformanceComponent,
-     FlowComponent
+    StyleguideComponent,
+    CodeComponent,
+    PerformanceComponent,
+    FlowComponent
   ],
   imports: [
     CommonModule,

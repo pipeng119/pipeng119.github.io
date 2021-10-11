@@ -16,6 +16,29 @@ export class FirstComponent extends CancelSubject implements OnInit, OnDestroy {
 
   public data$: any;
 
+  public list: any = {
+    id: 1,
+    data: {
+      info: [
+        {
+          id:1,
+          name: 'zhangsan',
+          age: 18,
+          detail: [
+            {
+              id:11,
+
+            }
+          ]
+        },
+        {
+          name: '李四',
+          age: 20,
+        },
+      ]
+    }
+  }
+
   constructor(private dataService: DataService) {
     super();
   }
@@ -23,7 +46,7 @@ export class FirstComponent extends CancelSubject implements OnInit, OnDestroy {
   ngOnInit(): void {
     // this.data$ = this.dataService.getData()
     this.dataService.serviceData$.subscribe(res => {
-      console.log('first',res)
+      console.log('first', res)
     })
     this.test1$.subscribe(res => console.log(res))
     this.test2$.subscribe(res => console.log(res))
@@ -64,6 +87,12 @@ export class FirstComponent extends CancelSubject implements OnInit, OnDestroy {
 
   myDestroy() {
     this.cancelStream(this.test1$, this.test2$);
+  }
+
+  changeAge() {
+    this.list.data.info.forEach((item: any) => {
+      item.age += 2;
+    });
   }
 
 }

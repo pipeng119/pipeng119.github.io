@@ -1,5 +1,5 @@
 import { DataService } from './../data.service';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { CancelSubject } from '../basic';
 import { pluck, share, shareReplay } from 'rxjs/operators';
@@ -10,6 +10,8 @@ import { pluck, share, shareReplay } from 'rxjs/operators';
   styleUrls: ['./second.component.scss']
 })
 export class SecondComponent extends CancelSubject implements OnInit, OnDestroy {
+
+  @Input() data: any;
 
   public test3$: Subject<any> = new Subject();
 
@@ -49,7 +51,7 @@ export class SecondComponent extends CancelSubject implements OnInit, OnDestroy 
     // const lateSubscriber = lastUrl.subscribe(console.log);
   }
 
-  biu(){
+  biu() {
     this.routeEnd.next({ data: {}, url: 'your-path' });
   }
 
