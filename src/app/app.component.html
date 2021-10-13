@@ -8,7 +8,7 @@
       </a>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-menu-item nz-tooltip nzTooltipPlacement="right" nzSelected>
+      <li nz-menu-item nz-tooltip nzTooltipPlacement="right">
         <a routerLink="/overview">前端概览</a>
       </li>
       <li nz-submenu nzTitle="研发流程标准化">
@@ -86,11 +86,52 @@
           <li nz-menu-item>
             <a routerLink="/frame">基础框架</a>
           </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Monitor</a>
+          <li nz-menu-item>
+            <a routerLink="/node">Node等工程化平台</a>
           </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Workplace</a>
+          <li nz-menu-item>
+            <a routerLink="/lib">物料库</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/synergy">前后端协同</a>
+          </li>
+          <li nz-submenu nzTitle="调试优化">
+            <ul>
+              <li nz-menu-item>
+                <a routerLink="/optimized">调优概览</a>
+              </li>
+              <li nz-menu-item>
+                <a routerLink="/optimized/buried">用户数据行为</a>
+              </li>
+            </ul>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/deploy">构建部署</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/">线上数据采集&分析</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/">数据量化</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/">复盘成长</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="前端培训">
+        <ul>
+          <li nz-menu-item>
+            <a routerLink="/training">培训概览</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/training/share">前端技术分享</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/training/award">分享奖励机制</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/training/review">前端优秀代码评审标准</a>
           </li>
         </ul>
       </li>
